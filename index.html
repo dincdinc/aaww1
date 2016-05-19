@@ -57,61 +57,33 @@
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-		<script>
-		var app = {
-    initialize: function() {
-        this.bindEvents();
-    },
-    bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-        document.getElementById("toggleBtn").addEventListener('click', this.toggle, false);
-    },
-    onDeviceReady: function() {
-      console.log('deviceready event');
-      app.push = PushNotification.init({
-           "android": {
-               "senderID": "234395128477"
-           },
-           "ios": {
-             "sound": true,
-             "vibration": true,
-             "badge": true
-           },
-           "windows": {}
-       });
- app.push.on('registration', function(data) {
-           console.log("registration event: " + data.registrationId);
-		   jQuery('#regId').html('dddd');
-		   document.getElementById("regId").innerHTML = "hier";
-           document.getElementById("regId").innerHTML = data.registrationId;
-           var oldRegId = localStorage.getItem('registrationId');
-           if (oldRegId !== data.registrationId) {
-               localStorage.setItem('registrationId', data.registrationId);
-           }
-       });
-app.push.on('error', function(e) {
-           console.log("push error = " + e.message);
-       });
-app.push.on('notification', function(data) {
-          console.log('notification event');
-          var cards = document.getElementById("cards");
-          var push = '<div class="row">' +
-            '<div class="col s12 m6">' +
-            '  <div class="card darken-1">' +
-            '    <div class="card-content black-text">' +
-            '      <span class="card-title black-text">' + data.title + '</span>' +
-            '      <p>' + data.message + '</p>' +
-            '      <p>' + data.additionalData.foreground + '</p>' +
-            '    </div>' +
-            '  </div>' +
-            ' </div>' +
-            '</div>';
-          cards.innerHTML += push;
-        });
-    }
-};
+		<script type="text/javascript">
+document.addEventListener("deviceready",onDeviceReady,false);
+function onDeviceReady(){
+console.log("Device Ready")
+var push = PushNotification.init({ "android": {"senderID": "234395128477"},
+"ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
 
-app.initialize();
+push.on('registration', function(data) {
+console.log(data.registrationId);
+$("regId").html('hi');
+$("regId").html(data.registrationId);
+});
+	   
+push.on('notification', function(data) {
+console.log(data.message);
+alert(data.title+" Message: " +data.message);
+// data.title,
+// data.count,
+// data.sound,
+// data.image,
+// data.additionalData
+});
+
+push.on('error', function(e) {
+console.log(e.message);
+});
+};
 </script>
     </body>
 </html>
