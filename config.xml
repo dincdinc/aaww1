@@ -4,12 +4,15 @@
     <name>TurkCem</name>
     <description>Die besten der Besten</description>
     <author email="dinc@" href="http://www.agameoftwohalves.com">AGOTH Webmaster</author>
-
-    <preference name="phonegap-version" value="3.3.0" />
-    <feature name="http://api.phonegap.com/1.0/device" />
+<content src="index.html" />
+    <icon src="pg_wings.png" />
     
-    <preference name="orientation"                value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
     
+    <preference name="orientation"    value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
+     <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#ee6e73" />
+    <preference name="StatusBarStyle" value="blacktranslucent" />
+	
     <gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />
@@ -26,9 +29,5 @@
 	<plugin name="cordova-plugin-console" spec="1.0.1" source="pgb" />
 	<plugin name="com.phonegap.plugin.statusbar" spec="1.1.0" source="pgb" />
 	<plugin name="com.phonegap.plugins.pushplugin" spec="2.5.0" source="pgb" />
-	 <icon src="pg_wings.png" />
 	
- <content src="index.html" />
-   
-    <access origin="*" subdomains="true" />
 </widget>
