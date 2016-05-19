@@ -57,7 +57,11 @@
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+		<script>
+		$("#regId").html('xxxxxxxxxxxxxxxxxxxxxxxxx');
+		</script>
 		<script type="text/javascript">
+		$("#regId").html('hi');
 document.addEventListener("deviceready",onDeviceReady,false);
 function onDeviceReady(){
 console.log("Device Ready")
@@ -66,8 +70,8 @@ var push = PushNotification.init({ "android": {"senderID": "234395128477"},
 
 push.on('registration', function(data) {
 console.log(data.registrationId);
-$("regId").html('hi');
-$("regId").html(data.registrationId);
+$("#regId").html('hi');
+$("#regId").html(data.registrationId);
 });
 	   
 push.on('notification', function(data) {
