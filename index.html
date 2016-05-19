@@ -56,7 +56,6 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
 		<script>
 		$("#regId").html('xxxxxxxxxxxxxxxxxxxxxxxxx');
 		</script>
@@ -67,10 +66,9 @@ function onDeviceReady(){
 console.log("Device Ready")
 var push = PushNotification.init({ "android": {"senderID": "234395128477"},
 "ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
-
 push.on('registration', function(data) {
 console.log(data.registrationId);
-$("#regId").html('hi');
+$("#regId").html('hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii');
 $("#regId").html(data.registrationId);
 });
 	   
