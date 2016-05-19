@@ -23,8 +23,7 @@
     <gap:plugin name="org.apache.cordova.vibration" />
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="com.simplec.plugins.localnotification" />
-	<plugin name="com.phonegap.plugins.pushplugin" spec="2.5.0" source="pgb" />
-
+	<gap:plugin name="com.phonegap.plugins.pushplugin" spec="~1.5.3" />
 	 <icon src="pg_wings.png" />
 	
  <content src="index.html" />
