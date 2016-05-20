@@ -28,6 +28,8 @@
     <gap:plugin name="com.simplec.plugins.localnotification" />
 	<plugin name="cordova-plugin-console" spec="1.0.1" source="pgb" />
 	<plugin name="com.phonegap.plugin.statusbar" spec="1.1.0" source="pgb" />
-	<plugin name="com.phonegap.plugins.pushplugin" spec="2.5.0" source="pgb" />
+	<plugin name="phonegap-plugin-push" spec="1.6.0">
+    <variable name="SENDER_ID" value="234395128477" />
+</plugin>
 	
 </widget>
