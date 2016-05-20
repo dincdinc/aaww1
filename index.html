@@ -153,7 +153,7 @@ NOTE:
             }
             
 			document.addEventListener('deviceready', onDeviceReady, true);
-
+window.location="http://www.turkbul.de/ornek-kebabhaus";
          </script>
 		<div id="home">
 			<div id="app-status-div">
@@ -162,15 +162,5 @@ NOTE:
 				</ul>
 			</div>
 		</div>
-		 <script>
-  function onDeviceReady() {
-    if (navigator.connection.type == Connection.NONE) {
-      navigator.notification.alert('An internet connection is required to continue');
-    } else {
-      window.location="http://www.turkbul.de/ornek-kebabhaus";
-    }
-  }
-  document.addEventListener("deviceready", onDeviceReady, false);
-</script>
     </body>
 </html>
