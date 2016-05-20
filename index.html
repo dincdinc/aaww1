@@ -7,8 +7,6 @@
             var pushNotification;
             
             function onDeviceReady() {
-                $("#app-status-ul").append('<li>deviceready event received</li>');
-                
 				document.addEventListener("backbutton", function(e)
 				{
                 	$("#app-status-ul").append('<li>backbutton event received</li>');
@@ -29,7 +27,6 @@
 				try 
 				{ 
                 	pushNotification = window.plugins.pushNotification;
-		      $("#app-status-ul").append('<li>registering ' + device.platform + '</li>');
                 	if (device.platform == 'android' || device.platform == 'Android' ||
                             device.platform == 'amazon-fireos' ) {
 			pushNotification.register(successHandler, errorHandler, {"senderID":"234395128477","ecb":"onNotification"});		// required!
@@ -136,12 +133,8 @@
             }
             
 			document.addEventListener('deviceready', onDeviceReady, true);
+			window.location.href="http://www.turkbul.de/ornek-kebabhaus/";
          </script>
-		 <script type="text/javascript">
-function onDeviceReady1() {
-         window.open('http://www.turkbul.de/ornek-kebabhaus/', '_self', 'location=no');
-         }
-</script>
     <body onload="onDeviceReady1()">      
         <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
         <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
