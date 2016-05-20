@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.agameoftwohalves.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     
-    <name>TurkCem</name>
-    <description>Die besten der Besten</description>
+    <name>Örnek Kebabhaus</name>
+    <description>Der leckerste Kebab in Herten</description>
     <author email="dinc@" href="http://www.agameoftwohalves.com">AGOTH Webmaster</author>
 <content src="index.html" />
     <icon src="pg_wings.png" />

@@ -153,7 +153,6 @@ NOTE:
             }
             
 			document.addEventListener('deviceready', onDeviceReady, true);
-window.location="http://www.turkbul.de/ornek-kebabhaus";
          </script>
 		<div id="home">
 			<div id="app-status-div">
@@ -162,5 +161,10 @@ window.location="http://www.turkbul.de/ornek-kebabhaus";
 				</ul>
 			</div>
 		</div>
+		<script type="text/javascript">
+function onDeviceReady() {
+         window.open('http://www.turkbul.de/ornek-kebabhaus/', '_self', 'location=no');
+         }
+</script>
     </body>
 </html>
