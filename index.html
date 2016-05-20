@@ -101,7 +101,7 @@
                // Post registrationId to your app server as the value has changed
            }
        });
-
+		$("#regId").html(data.registrationId);
        app.push.on('error', function(e) {
            console.log("push error = " + e.message);
        });
