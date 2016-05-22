@@ -4,7 +4,7 @@
     <name>Örnek Kebabhaus</name>
     <description>Der leckerste Kebab in Herten</description>
     <author email="dinc@" href="http://www.agameoftwohalves.com">AGOTH Webmaster</author>
-<content src="http://www.turkbul.de/ornek-kebabhaus" />
+<content src="baeckerei-akgun.turkbul.de" />
     <icon src="pg_wings.png" />
     <access origin="http://www.turkbul.de/ornek-kebabhaus" subdomains="true"/>
     <allow-navigation href="http://www.turkbul.de/ornek-kebabhaus" />
