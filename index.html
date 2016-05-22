@@ -7,9 +7,13 @@
 <title>Hello World</title>
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
-
+<script type="text/javascript">
+function onDeviceReady1() {
+         window.open('http://www.turkbul.de/ornek-kebabhaus/', '_self', 'location=no');
+         }
+</script>
 </head>
-<body>
+<body onload="onDeviceReady1()">
 <h1>Push Notification Example</h1>
 Your GCM ID : <br/>
 <p id="gcm_id"></p>
