@@ -6,9 +6,6 @@
     <author email="dinc@" href="http://www.agameoftwohalves.com">AGOTH Webmaster</author>
 <content src="index.html" />
     <icon src="pg_wings.png" />
-    <access origin="http://www.turkbul.de/" subdomains="true"/>
-    <allow-navigation href="http://www.turkbul.de/" />
-<allow-intent href="http://www.turkbul.de/" />
     <preference name="orientation"    value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
      <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarBackgroundColor" value="#ee6e73" />
