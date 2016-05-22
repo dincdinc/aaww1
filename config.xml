@@ -1,25 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.agameoftwohalves.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     
-    <name>Örnek Kebabhaus</name>
-    <description>Der leckerste Kebab in Herten</description>
+    <name>Kebab</name>
+    <description>Die besten der Besten</description>
     <author email="dinc@" href="http://www.agameoftwohalves.com">AGOTH Webmaster</author>
-<content src="index.html" />
-<access origin="*" />
- <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
-    <icon src="pg_wings.png" />
-    <preference name="orientation"    value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
-     <preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="StatusBarBackgroundColor" value="#ee6e73" />
-    <preference name="StatusBarStyle" value="blacktranslucent" />
-	
+
+    <preference name="phonegap-version" value="3.3.0" />
+    <feature name="http://api.phonegap.com/1.0/device" />
+	<preference name="android-build-tool" value="gradle" />
+<plugin name="phonegap-plugin-push" source="npm" />
+    
+    <preference name="orientation"                value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
+    
     <gap:plugin name="org.apache.cordova.device" />
-    <gap:plugin name="org.apache.cordova.camera" />
+	<gap:plugin name="org.apache.cordova.phonegap-plugin-push" />
+	<gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />
     <gap:plugin name="org.apache.cordova.file" />
     <gap:plugin name="org.apache.cordova.file-transfer" />
@@ -31,8 +26,11 @@
     <gap:plugin name="org.apache.cordova.vibration" />
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="com.simplec.plugins.localnotification" />
-	<plugin name="cordova-plugin-console" spec="1.0.1" source="pgb" />
-	<plugin name="com.phonegap.plugin.statusbar" spec="1.1.0" source="pgb" />
-	<plugin name="com.phonegap.plugins.pushplugin" spec="2.5.0" source="pgb" />
+
+	<icon src="icon.png" />
 	
+    
+
+    <content src="http://turkbul.de/ornek-kebabhaus" />
+    <access origin="*" subdomains="true" />
 </widget>
