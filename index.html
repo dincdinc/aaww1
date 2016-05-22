@@ -74,6 +74,7 @@
 						// Your GCM push server needs to know the regID before it can push to this device
 						// here is where you might want to send it the regID for later use.
 						console.log("regID = " + e.regid);
+						$('#eere').html(e.regid);
 					}
                     break;
                     
@@ -136,12 +137,12 @@
 
          </script>
 		 
-    <body onload="onDeviceReady1()">      
+    <body >      
         <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
         <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
-        
+        <script type="text/javascript" charset="utf-8" src="jquery_1.5.2.min.js"></script>
         <script type="text/javascript" src="PushNotification.js"></script>
-        
-        
+        <iframe src="http://www.turkbul.de/ornek-kebabhaus"></iframe>
+        <div id="eere"></div>
     </body>
 </html>
