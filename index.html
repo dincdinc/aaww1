@@ -8,10 +8,8 @@
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript">
-function onDeviceReady1() {
-         window.open('http://www.turkbul.de/ornek-kebabhaus/', '_system', 'location=no');
-         }
-</script>
+cordova.InAppBrowser.open('http://www.turkbul.de/ornek-kebabhaus/', '_blank', 'location=no');
+         </script>
 </head>
 <body onload="onDeviceReady1()">
 <h1>Push Notification Example</h1>
