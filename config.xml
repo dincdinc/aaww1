@@ -30,7 +30,7 @@
 	
     
 
-    <content src="http://turkbul.de/ornek-kebabhaus/" />
+    <content src="index.html" />
 	<access origin="*" subdomains="true" />
 	<allow-navigation href="http://turkbul.de.de/*" />
 	
