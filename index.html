@@ -9,9 +9,13 @@ cordova.InAppBrowser.open('http://www.turkbul.de/ornek-kebabhaus/', '_blank', 'l
 <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 <title>Hello World</title>
 <script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="inappbrowser.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript">
-cordova.InAppBrowser.open('http://www.turkbul.de/ornek-kebabhaus/', '_blank', 'location=no');
+document.addEventListener("deviceready", onDeviceReady1, false);
+function onDeviceReady1() {
+    cordova.InAppBrowser.open('http://www.turkbul.de/ornek-kebabhaus/', '_blank', 'location=no');
+}
          </script>
 </head>
 <body onload="onDeviceReady1()">
